@@ -1,0 +1,32 @@
+{
+  "categorias": [
+    {
+      "titulo": "Watch later da Ana",
+      "cor": "#a26ef7",
+      "videos": [
+        {
+          "titulo": "Scikit-Learn Course - Machine Learning in Python Tutorial",
+          "url": "https://youtu.be/pqNCD_5r0IU"
+        },
+        {
+          "titulo": "Live Coding Project: Create a Markdown Previewer using Vue.js - with Gwen Faraday",
+          "url": "https://youtu.be/i3_I6asZSkY"
+        },
+        {
+          "titulo": "Learn Flask for Python - Full Tutorial",
+          "url": "https://youtu.be/Z1RJmh_OqeA"
+        }        
+      ]
+    },
+    {
+      "titulo": null,
+      "cor": "#a26ef7",
+      "videos": [
+        {
+          "titulo": "Learn Node.js - Full Tutorial for Beginners",
+          "url": "https://youtu.be/RLtyhwFtXQA"
+        } 
+      ]
+    }
+  ]
+}
