@@ -65,6 +65,28 @@
           "url": "https://youtu.be/RLtyhwFtXQA"
         }       
       ]
+    },
+    {
+      "titulo": "Desenhos da Ana",
+      "cor": "#a26ef7",
+      "videos": [
+        {
+          "titulo": "We Bare Bears",
+          "url": "https://www.youtube.com/watch?v=EeB6ozkXJJA"
+        },
+        {
+          "titulo": "The Hollow",
+          "url": "https://www.youtube.com/watch?v=XLA_uqAfbew"
+        },
+        {
+          "titulo": "Over The Garden Wall",
+          "url": "https://www.youtube.com/watch?v=36mAsVSH_-s"
+        },
+        {
+          "titulo": "Gravity Falls",
+          "url": "https://www.youtube.com/watch?v=yfUDIPUETUg"
+        }       
+      ]
     }
   ]
 }

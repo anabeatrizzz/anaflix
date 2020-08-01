@@ -1,25 +1,31 @@
+/* Resetando propriedades em toda a aplicação */
 * {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
 
+/* Variaveis de cores */
 :root {
+/*--nome: valor */
   --primary: #6610f2;
   --black: #000000;
   --blackLighter: #9E9E9E;
   --grayLight: #F5F5F5;
+  --grayDark: #141414;
   --grayMedium: #e5e5e5; 
   --white: #FFFFFF;
   --frontEnd: #6BD1FF;
   --backEnd: #00C86F;
 }
 
+/* Resetando propriedades de duas tags */
 html,
 body {
   margin: 0;
   padding: 0;
 }
 
+/* A cor do link vai ser igual a do elemento pai */
 a {
   color: inherit;
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from "styled-components"; 
 import Menu from "./componentes/Menu.js";
 import dadosIniciais from "./data/dados_iniciais.json";
 import BannerMain from "./componentes/BannerMain.js";
@@ -13,10 +14,14 @@ import Footer from "./componentes/Footer.js";
     não é HTML, é JSX (JavaScript XML).
 */
 
+const AppWrapper = styled.div`
+  background: var(--grayDark);
+`
+
 
 function App() {
   return (
-    <div style={{ background: "#141414" }}>
+    <AppWrapper>
       <Menu />
       <Carousel
         category={dadosIniciais.categorias[1]}
@@ -27,7 +32,7 @@ function App() {
       <Carousel
         category={dadosIniciais.categorias[2]}
       />
-    </div>
+    </AppWrapper>
   );
 }
 
