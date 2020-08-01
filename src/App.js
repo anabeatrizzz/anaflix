@@ -19,10 +19,13 @@ function App() {
     <div style={{ background: "#141414" }}>
       <Menu />
       <Carousel
+        category={dadosIniciais.categorias[1]}
+      />
+      <Carousel
         category={dadosIniciais.categorias[0]}
       />
       <Carousel
-        category={dadosIniciais.categorias[1]}
+        category={dadosIniciais.categorias[2]}
       />
     </div>
   );

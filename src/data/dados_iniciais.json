@@ -1,6 +1,50 @@
 {
   "categorias": [
     {
+      "titulo": "Desenhos da Ana",
+      "cor": "#a26ef7",
+      "videos": [
+        {
+          "titulo": "We Bare Bears",
+          "url": "https://www.youtube.com/watch?v=EeB6ozkXJJA"
+        },
+        {
+          "titulo": "The Hollow",
+          "url": "https://www.youtube.com/watch?v=XLA_uqAfbew"
+        },
+        {
+          "titulo": "Over The Garden Wall",
+          "url": "https://www.youtube.com/watch?v=36mAsVSH_-s"
+        },
+        {
+          "titulo": "Gravity Falls",
+          "url": "https://www.youtube.com/watch?v=yfUDIPUETUg"
+        }       
+      ]
+    },
+    {
+      "titulo": "Séries da Ana",
+      "cor": "#a26ef7",
+      "videos": [
+        {
+          "titulo": "Prison Break",
+          "url": "https://www.youtube.com/watch?v=der8A7Z9u7c"
+        },
+        {
+          "titulo": "Mind Field",
+          "url": "https://www.youtube.com/watch?v=GAPqEAWW9lc"
+        },
+        {
+          "titulo": "Think Like a Coder",
+          "url": "https://www.youtube.com/watch?v=qhAAmyGnA-M"
+        },
+        {
+          "titulo": "BrainChild",
+          "url": "https://www.youtube.com/watch?v=U2WK7PjeVYs"
+        }       
+      ]
+    },
+    {
       "titulo": "Watch later da Ana",
       "cor": "#a26ef7",
       "videos": [
@@ -15,17 +59,11 @@
         {
           "titulo": "Learn Flask for Python - Full Tutorial",
           "url": "https://youtu.be/Z1RJmh_OqeA"
-        }        
-      ]
-    },
-    {
-      "titulo": null,
-      "cor": "#a26ef7",
-      "videos": [
+        },
         {
           "titulo": "Learn Node.js - Full Tutorial for Beginners",
           "url": "https://youtu.be/RLtyhwFtXQA"
-        } 
+        }       
       ]
     }
   ]
