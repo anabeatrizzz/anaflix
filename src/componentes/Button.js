@@ -1,5 +1,3 @@
-/* Ao inves de criar um arquivo .css, vamos usar essa lib para
-passarmos css com js */
 import styled from "styled-components";
 
 const Button = styled.button`
