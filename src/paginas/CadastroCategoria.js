@@ -1,6 +1,5 @@
 import React from 'react';
 import PaginaPadrao from '../componentes/PaginaPadrao.js';
-import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { EstiloH1 } from './CadastroVideo-css.js';
 

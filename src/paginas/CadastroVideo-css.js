@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 
 export const EstiloH1 = styled.h1`
