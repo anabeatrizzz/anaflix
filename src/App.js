@@ -16,6 +16,7 @@ import Footer from "./componentes/Footer.js";
     - Usa-se a lib styled-components para escrevermos css dentro de um arquivo js.
     - O conceito de Single Page Application envolve não ter requisições (sem refresh) quando ocorre uma transição entre páginas. Uma página unica que representa a aplicação como um todo.
     - Todo componente é uma função.
+    - Usa-se <> </> para não se ter que escrever uma enclosing tag.
 */
 
 /* Criando uma variavel que contem uma div de cor de fundo grayDark. Usamos o nome desta variavel dentro da função App */
@@ -32,6 +33,9 @@ function App() {
       />
       <Carousel
         category={dadosIniciais.categorias[0]}
+      />
+      <Carousel
+        category={dadosIniciais.categorias[3]}
       />
       <Carousel
         category={dadosIniciais.categorias[2]}

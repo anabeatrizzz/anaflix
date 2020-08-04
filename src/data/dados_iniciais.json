@@ -67,24 +67,28 @@
       ]
     },
     {
-      "titulo": "Desenhos da Ana",
+      "titulo": "Músicas da Ana",
       "cor": "#a26ef7",
       "videos": [
         {
-          "titulo": "We Bare Bears",
-          "url": "https://www.youtube.com/watch?v=EeB6ozkXJJA"
+          "titulo": "Take On Me | a-Ha",
+          "url": "https://www.youtube.com/watch?v=irljBY9J5ig&list=PLEi1fy339GWfFNPVHwzEYKAsx1mBfDfQ-&index=5&t=0s"
         },
         {
-          "titulo": "The Hollow",
-          "url": "https://www.youtube.com/watch?v=XLA_uqAfbew"
+          "titulo": "Never Gonna Give You Up | Rick Astley",
+          "url": "https://www.youtube.com/watch?v=6_b7RDuLwcI&list=PLEi1fy339GWfFNPVHwzEYKAsx1mBfDfQ-&index=8&t=0s"
         },
         {
-          "titulo": "Over The Garden Wall",
-          "url": "https://www.youtube.com/watch?v=36mAsVSH_-s"
+          "titulo": "Intentions | Justin Bieber",
+          "url": "https://www.youtube.com/watch?v=3AyMjyHu1bA&list=PLEi1fy339GWfFNPVHwzEYKAsx1mBfDfQ-&index=10&t=0s"
         },
         {
-          "titulo": "Gravity Falls",
-          "url": "https://www.youtube.com/watch?v=yfUDIPUETUg"
+          "titulo": "You Are | Lionel Richie",
+          "url": "https://www.youtube.com/watch?v=DXMDWfLclNY&list=PLEi1fy339GWfFNPVHwzEYKAsx1mBfDfQ-&index=22&t=0s"
+        },
+        {
+          "titulo": "Careless Whisper | Lionel Richie",
+          "url": "https://www.youtube.com/watch?v=izGwDsrQ1eQ&list=PLEi1fy339GWfFNPVHwzEYKAsx1mBfDfQ-&index=24&t=0s"
         }       
       ]
     }

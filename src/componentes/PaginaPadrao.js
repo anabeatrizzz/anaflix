@@ -19,7 +19,6 @@ function PaginaPadrao({ children }){
 				<Main>
 					{ children }
 				</Main>
-			<br />
 			<Footer />
 		</>
 	)
