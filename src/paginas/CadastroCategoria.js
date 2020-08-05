@@ -2,12 +2,13 @@ import React, { useState, useEffect } from 'react';
 import PaginaPadrao from '../componentes/PaginaPadrao.js';
 import { Link } from 'react-router-dom';
 import FormField from '../componentes/FormField.js';
+import Button from '../componentes/Button.js';
 
 function CadastroCategoria() {
 	/* Objeto JS (muito similar a um dicionario em Python) */
 	const valoresIniciais = {
-    nome: ' ',
-    descricao: ' ',
+    nome: '',
+    descricao: '',
     cor: '#000000',
   };
   
@@ -63,18 +64,17 @@ function CadastroCategoria() {
 	
 	return(
 		<PaginaPadrao>
-			<h1 style={{'text-align': 'center'}}>Cadastro de categoria: <span style={{'color': 'var(--primary)'}}>{valores.nome}</span></h1>
+			<h1 style={{textAlign: 'center'}}>Cadastro de categoria: <span style={{'color': 'var(--primary)'}}>{valores.nome}</span></h1>
 			
 			<form onSubmit={handleSubmit}>
         
         <FormField label="Nome da categoria" type="text" name="nome" value={valores.nome} onChange={handleChange} />
-        <br /><br />
-        <FormField label="Descrição" type="text" name="descricao" value={valores.descricao} onChange={handleChange} />
-        <br /><br />
-        <FormField label="Cor" type="color" name="cor" value={valores.cor} onChange={handleChange} />
-        <br /><br />
         
-        <div style={{'text-align': 'center'}}><button>Cadastrar</button></div>
+        <FormField label="Descrição" type="textarea" name="descricao" value={valores.descricao} onChange={handleChange} />
+        
+        <FormField label="Cor" type="color" name="cor" value={valores.cor} onChange={handleChange} />
+        
+        <div style={{textAlign: 'center'}}><Button style={{background: 'var(--black)'}}>Cadastrar</Button></div>
 
       </form>
 
