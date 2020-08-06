@@ -48,6 +48,11 @@ function CadastroCategoria() {
 	  setValores(valoresIniciais);
 	}
 
+  /*
+    - Usamos useEffect quando queremos que algo aconteça.
+    - Primeiro parametro: O que queremos que aconteça.
+    - Segundo parametro (opcional): Quando queremos que aconteça (no caso, quando quais coisas atualizarem, faça o que está no primeiro parametro).
+  */
   useEffect(() => {
     if (window.location.href.includes('localhost')) {
       const URL = 'http://localhost:8080/categorias';
@@ -79,9 +84,9 @@ function CadastroCategoria() {
       </form>
 
       <ul>
-        {categorias.map((categoria, indice) => {
+        {categorias.map((categoria) => {
         	return (
-        		<li key={`${categoria}${indice}`}>
+        		<li key={`${categoria.id}`}>
         			{categoria.nome}
         		</li>
         	);

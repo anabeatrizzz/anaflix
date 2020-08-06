@@ -28,6 +28,7 @@ function App() {
   return (
     <AppWrapper>
       <Menu />
+      <BannerMain videoTitle="Imersão React - dia 27 de julho nos melhores home offices" videoDescription="Imersão React da Alura: 5 dias de conteúdo exclusivo para você participar desta batalha do desenvolvimento Web e aprofundar seus conhecimentos em React!" url="https://youtu.be/XJ3sr259SDI" />
       <Carousel
         category={dadosIniciais.categorias[1]}
       />
