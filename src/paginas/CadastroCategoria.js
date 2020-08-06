@@ -54,8 +54,8 @@ function CadastroCategoria() {
     - Segundo parametro (opcional): Quando queremos que aconteça (no caso, quando quais coisas atualizarem, faça o que está no primeiro parametro).
   */
   useEffect(() => {
-    if (window.location.href.includes('localhost')) {
-      const URL = 'https://anaflix-alura.herokuapp.com/categorias';
+      const temLocalhost = window.location.href.includes('localhost')
+      const URL = temLocalhost ? 'http://localhost:8080/categorias' : 'https://anaflix-alura.herokuapp.com/categorias';
       fetch(URL).then(async (respostaDoServer) => {
           if (respostaDoServer.ok) {
             const resposta = await respostaDoServer.json();
@@ -64,7 +64,7 @@ function CadastroCategoria() {
           }
           throw new Error('Não foi possível pegar os dados');
         });
-    }
+    
   }, []);
 	
 	return(
