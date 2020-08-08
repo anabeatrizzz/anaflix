@@ -2,9 +2,127 @@
 	"categorias": [
 		{
 			"id": 1,
-			"nome": "Nome teste",
-			"descricao": "Descricao teste",
-			"cor": "#00001"
+			"titulo": "Desenhos da Ana",
+			"cor": "#a26ef7"
+		},
+		{
+			"id": 2,
+			"titulo": "Séries da Ana",
+			"cor": "#a26ef7"
+		},
+		{
+			"id": 3,
+			"titulo": "Músicas da Ana",
+			"cor": "#a26ef7"
+		},
+		{
+			"id": 4,
+			"titulo": "Watch Later da Ana",
+			"cor": "#a26ef7"
+		}
+	],
+	"videos": [
+		{
+			"id": 1,
+			"categoriaId": 1,
+			"titulo": "We Bare Bears",
+      "url": "https://www.youtube.com/watch?v=EeB6ozkXJJA"
+		},
+		{
+			"id": 2,
+			"categoriaId": 1,
+			"titulo": "The Hollow",
+			"url": "https://www.youtube.com/watch?v=XLA_uqAfbew"
+		},
+		{
+			"id": 3,
+			"categoriaId": 1,
+			"titulo": "Over The Garden Wall",
+			"url": "https://www.youtube.com/watch?v=36mAsVSH_-s"
+		},
+		{
+			"id": 4,
+			"categoriaId": 1,
+			"titulo": "Gravity Falls",
+			"url": "https://www.youtube.com/watch?v=yfUDIPUETUg"
+		},
+		{
+			"id": 5,
+			"categoriaId": 2,
+			"titulo": "Prison Break",
+			"url": "https://www.youtube.com/watch?v=der8A7Z9u7c"
+		},
+		{
+			"id": 6,
+			"categoriaId": 2,
+			"titulo": "Mind Field",
+			"url": "https://www.youtube.com/watch?v=GAPqEAWW9lc"
+		},
+		{
+			"id": 7,
+			"categoriaId": 2,
+			"titulo": "Think Like a Coder",
+			"url": "https://www.youtube.com/watch?v=qhAAmyGnA-M"
+		},
+		{
+			"id": 8,
+			"categoriaId": 2,
+			"titulo": "BrainChild",
+			"url": "https://www.youtube.com/watch?v=U2WK7PjeVYs"
+		},
+		{
+			"id": 9,
+			"categoriaId": 3,
+			"titulo": "Scikit-Learn Course - Machine Learning in Python Tutorial",
+			"url": "https://youtu.be/pqNCD_5r0IU"
+		},
+		{
+			"id": 10,
+			"categoriaId": 3,
+			"titulo": "Live Coding Project: Create a Markdown Previewer using Vue.js - with Gwen Faraday",
+			"url": "https://youtu.be/i3_I6asZSkY"
+		},
+		{
+			"id": 11,
+			"categoriaId": 3,
+			"titulo": "Learn Flask for Python - Full Tutorial",
+			"url": "https://youtu.be/Z1RJmh_OqeA"
+		},
+		{
+			"id": 13,
+			"categoriaId": 3,
+			"titulo": "Learn Node.js - Full Tutorial for Beginners",
+			"url": "https://youtu.be/RLtyhwFtXQA"
+		},
+		{
+			"id": 14,
+			"categoriaId": 4,
+			"titulo": "Take On Me | a-Ha",
+			"url": "https://www.youtube.com/watch?v=irljBY9J5ig&list=PLEi1fy339GWfFNPVHwzEYKAsx1mBfDfQ-&index=5&t=0s"
+		},
+		{
+			"id": 15,
+			"categoriaId": 4,
+			"titulo": "Never Gonna Give You Up | Rick Astley",
+			"url": "https://www.youtube.com/watch?v=6_b7RDuLwcI&list=PLEi1fy339GWfFNPVHwzEYKAsx1mBfDfQ-&index=8&t=0s"
+		},
+		{
+			"id": 16,
+			"categoriaId": 4,
+			"titulo": "Intentions | Justin Bieber",
+			"url": "https://www.youtube.com/watch?v=3AyMjyHu1bA&list=PLEi1fy339GWfFNPVHwzEYKAsx1mBfDfQ-&index=10&t=0s"
+		},
+		{
+			"id": 17,
+			"categoriaId": 4,
+			"titulo": "You Are | Lionel Richie",
+			"url": "https://www.youtube.com/watch?v=DXMDWfLclNY&list=PLEi1fy339GWfFNPVHwzEYKAsx1mBfDfQ-&index=22&t=0s"
+		},
+		{
+			"id": 18,
+			"categoriaId": 4,
+			"titulo": "Careless Whisper | Lionel Richie",
+			"url": "https://www.youtube.com/watch?v=izGwDsrQ1eQ&list=PLEi1fy339GWfFNPVHwzEYKAsx1mBfDfQ-&index=24&t=0s"
 		}
 	]
 }
