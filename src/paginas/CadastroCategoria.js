@@ -3,6 +3,7 @@ import PaginaPadrao from '../componentes/PaginaPadrao.js';
 import { Link } from 'react-router-dom';
 import FormField from '../componentes/FormField.js';
 import Button from '../componentes/Button.js';
+import useForm from '../componentes/useForm';
 
 function CadastroCategoria() {
 	/* Objeto JS (muito similar a um dicionario em Python) */
@@ -18,23 +19,8 @@ function CadastroCategoria() {
 		useState retorna um par de valores: o valor atual (categorias e valores) e uma funcao que muda este valor (setCategorias e setValues).
   */
   const [categorias, setCategorias] = useState([]);
-  const [valores, setValores] = useState(valoresIniciais);
 
-  function setValor(chave, valor) {
-    setValores({
-    	/* As reticencias aqui representam "tudo que ja estiver lá mais valores" */
-      ...valores,
-      [chave]: valor,
-    });
-  }
-
-  /* Função que lida com o evento Change (quando se escreve em um input) */
-  function handleChange(infosDoEvento) {
-    setValor(
-      infosDoEvento.target.getAttribute('name'),
-      infosDoEvento.target.value,
-    );
-  }
+  const { handleChange, valores, limparForm } = useForm(valoresIniciais);
 
   /* Função que lida com o evento submit (quando se envia um formulario) */
   function handleSubmit(infosDoEvento) {
@@ -44,8 +30,6 @@ function CadastroCategoria() {
 	    ...categorias,
 	    valores,
 	  ]);
-
-	  setValores(valoresIniciais);
 	}
 
   /*

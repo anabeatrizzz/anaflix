@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from "styled-components"; 
 import Menu from "./componentes/Menu.js";
 import dadosIniciais from "./data/dados_iniciais.json";
 import BannerMain from "./componentes/BannerMain.js";
 import Carousel from "./componentes/Carousel.js";
 import Footer from "./componentes/Footer.js";
+import categoriasR from "./functions/categoriesData.js";
 
 /*
   ANOTAÇÕES:
@@ -25,6 +26,16 @@ const AppWrapper = styled.div`
 `
 
 function App() {
+  useEffect( () => {
+    categoriasR.getAllWithVideos()
+      .then((categoriasComVideos) => {
+        console.log(categoriasComVideos)
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  });
+
   return (
     <AppWrapper>
       <Menu />
