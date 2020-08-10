@@ -10,6 +10,7 @@ import categoriasR from "../functions/categoriesData.js";
 function CadastroVideo() {
 	const history = useHistory();
 	const [categorias, setCategorias] = useState([]);
+	const titulosCategoria = categorias.map(({ titulo }) => titulo);
 	const { handleChange, valores } = useForm({
 		titulo: "",
 		url: "",
@@ -24,13 +25,12 @@ function CadastroVideo() {
 		})
 	}, [])
 
-	console.log(categorias);
-
 	return(
 		<PaginaPadrao>
-			<h1 style={{'text-align': 'center'}}>Cadastro de video</h1>
+			<h1 style={{'textAlign': 'center'}}>Cadastro de video</h1>
 			<form onSubmit={(event) => {
 				event.preventDefault();
+				
 				const categoriaEscolhida = categorias.find((categoria) => {
 					return categoria.titulo === valores.categoria;
 				})
@@ -49,12 +49,18 @@ function CadastroVideo() {
 				
 				<FormField label="URL" type="text" name="url" value={valores.url} onChange={handleChange} />
 				
-				<FormField label="Categoria" type="text" name="categoria" value={valores.categoria} onChange={handleChange} />
+				<FormField
+				label="Categoria"
+				type="text"
+				name="categoria"
+				value={valores.categoria}
+				onChange={handleChange}
+				sugestoes={titulosCategoria} />
 				
 				<div style={{textAlign: 'center'}}><Button type="submit" style={{background: 'var(--black)'}}>Cadastrar</Button></div>
 			</form>
 			<Link to="/cadastro/categoria">
-				<p style={{'text-align': 'center'}}>Cadastre uma categoria</p>
+				<p style={{'textAlign': 'center'}}>Cadastre uma categoria</p>
 			</Link>
 		</PaginaPadrao>
 	)
