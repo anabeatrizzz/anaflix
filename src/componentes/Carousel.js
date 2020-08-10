@@ -1,5 +1,5 @@
 import React from 'react';
-import { VideoCardGroupContainer, VideoCardList, Title} from './Carousel-css.js';
+import { VideoCardGroupContainer, Title} from './Carousel-css.js';
 import VideoCard from './VideoCard.js';
 import Slider, { SliderItem } from './Slider.js';
 

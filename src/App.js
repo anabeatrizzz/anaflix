@@ -1,11 +1,8 @@
-import React, {useEffect} from 'react';
-import styled from "styled-components"; 
-import Menu from "./componentes/Menu.js";
-import dadosIniciais from "./data/dados_iniciais.json";
+import React, {useEffect, useState} from 'react';
 import BannerMain from "./componentes/BannerMain.js";
 import Carousel from "./componentes/Carousel.js";
-import Footer from "./componentes/Footer.js";
 import categoriasR from "./functions/categoriesData.js";
+import PaginaPadrao from "./componentes/PaginaPadrao.js";
 
 /*
   ANOTAÇÕES:
@@ -20,41 +17,42 @@ import categoriasR from "./functions/categoriesData.js";
     - Usa-se <> </> para não se ter que escrever uma enclosing tag.
 */
 
-/* Criando uma variavel que contem uma div de cor de fundo grayDark. Usamos o nome desta variavel dentro da função App */
-const AppWrapper = styled.div`
-  background: var(--grayDark);
-`
-
 function App() {
-  useEffect( () => {
+  const [dadosIniciais, setDadosIniciais] = useState([]);
+  useEffect(() => {
     categoriasR.getAllWithVideos()
       .then((categoriasComVideos) => {
-        console.log(categoriasComVideos)
+        console.log(categoriasComVideos);
+        setDadosIniciais(categoriasComVideos);
       })
       .catch((err) => {
         console.log(err.message);
       });
-  });
+  }, []);
 
   return (
-    <AppWrapper>
-      <Menu />
-      <BannerMain videoTitle="Imersão React - dia 27 de julho nos melhores home offices" videoDescription="Imersão React da Alura: 5 dias de conteúdo exclusivo para você participar desta batalha do desenvolvimento Web e aprofundar seus conhecimentos em React!" url="https://youtu.be/XJ3sr259SDI" />
-      <Carousel
-        category={dadosIniciais.categorias[1]}
-      />
-      <Carousel
-        category={dadosIniciais.categorias[0]}
-      />
-      <Carousel
-        category={dadosIniciais.categorias[3]}
-      />
-      <Carousel
-        category={dadosIniciais.categorias[2]}
-      />
+    <PaginaPadrao paddingAll={0}>
+      {dadosIniciais.length === 0 && (<h1>Carregando...</h1>)}
+      {dadosIniciais.map((categoria, indice) => {
+        if(indice === 0){
+          return (
+            <div key={categoria.id}>
+              <BannerMain videoTitle="Imersão React - dia 27 de julho nos melhores home offices" videoDescription="Imersão React da Alura: 5 dias de conteúdo exclusivo para você participar desta batalha do desenvolvimento Web e aprofundar seus conhecimentos em React!" url="https://youtu.be/XJ3sr259SDI" />
+              <Carousel
+                category={dadosIniciais[0]}
+              />
+            </div>
+          );
+        }
+        return (
+          <Carousel
+            key={categoria.id}
+            category={categoria}
+          />
+        );
+      })}
       <br />
-      <Footer />
-    </AppWrapper>
+    </PaginaPadrao>
   );
 }
 

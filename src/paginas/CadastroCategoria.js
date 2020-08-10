@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import PaginaPadrao from '../componentes/PaginaPadrao.js';
-import { Link } from 'react-router-dom';
 import FormField from '../componentes/FormField.js';
 import Button from '../componentes/Button.js';
 import useForm from '../componentes/useForm';
@@ -56,6 +55,7 @@ function CadastroCategoria() {
 			<h1 style={{textAlign: 'center'}}>Cadastro de categoria: <span style={{'color': 'var(--primary)'}}>{valores.nome}</span></h1>
 			
 			<form onSubmit={handleSubmit}>
+        limparForm()
         
         <FormField label="Nome da categoria" type="text" name="nome" value={valores.nome} onChange={handleChange} />
         
