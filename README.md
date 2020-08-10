@@ -27,8 +27,8 @@
 	- `categorias` e `valores` são variáveis de estado que armazenam o(s) valor(es) inicial(ais).
 	- O que está dentro dos parenteses de `useState` é/são o(s) valor(es) inicial(ais).
 	- `useState` retorna um par de valores: o valor atual (`categorias` e `valores`) e uma função que muda este valor (`setCategorias` e `setValues`).
-- Usamos `useEffect` quando queremos que algo aconteça. **Primeiro parâmetro**: O que queremos que aconteça. **Segundo parâmetro (opcional)**: Quando queremos que aconteça (no caso, quando quais coisas atualizarem, faça o que está no primeiro parâmetro).
-- (Há mais o que escrever aqui...)
+- Usamos `useEffect` quando queremos que algo aconteça.<br> **Primeiro parâmetro**: O que queremos que aconteça.<br> **Segundo parâmetro (opcional)**: Quando queremos que aconteça (no caso, quando quais coisas atualizarem, faça o que está no primeiro parâmetro).
+- (Há mais para escrever aqui...)
 
 # [Configurações padrões :wrench:](#índice)
 
