@@ -1,3 +1,36 @@
+<p align="center">
+  <img width="30%" src="https://i.ibb.co/Nm2xfZ1/img2.jpg" alt="Icon-Imersao-Alura"/>
+</p>
+
+
+# Índice
+* [O que aprendi? :thinking:](#o-que-aprendi-thinking)
+* [Configurações padrões :wrench:](#configurações-padrões-wrench)
+
+# [O que aprendi? :thinking:](#índice)
+- *Hot reload* é quando a página atualiza sozinha quando editamos um arquivo e depois salvamos.
+- Tudo que está dentro dos parentes do `return` da função `App` não é HTML, mas sim JSX (JavaScript XML).
+- No JS a palavra class é reservada, então usa-se `ClassName` para referenciar classes do css.
+- Usa-se a lib `styled-components` para escrevermos css dentro de um arquivo js.
+- O conceito de Single Page Application envolve não ter requisições (sem refresh) quando ocorre uma transição entre páginas. Uma página unica que representa a aplicação como um todo.
+- Todo componente é uma função.
+- Usa-se `<> </>` para não se ter que escrever uma enclosing tag.
+- Exportando função para que possamos usá-la em outra página do projeto: `export default NomeDaFuncao`
+- `BrowserRouter`: As rotas da aplicação (/, /cadastro, /cadastro/video)
+- `Switch`: Indica quais as entradas possíveis. Então se a entrada for /, direcione para o componente `App`. Entradas são indicadas uma por vez usando vários `<Route />`
+- Em `App.js` estamos colocando o JSX da função `App` dentro do elemento com `id="root"` em index.html
+- O atributo `exact` significa que deve ser acessado aquele path exato para que o componente seja mostrado, se não, mostra uma página em branco.
+	- `<Route path="/" component={App} exact />`
+	- `<Route path="/cadastro/video" component={CadastroVideo} />`
+	- Se for acessado a rota `/cadastro/video`, `CadastroVideo` aparece, mas se tirarmos o `exact`, é o componente `App` que aparece. O motivo é porque já foi encontrado o / e a ordem de cada `<Route />` faz diferença.
+- CadastroCategoria.js:
+	- `categorias` e `valores` são variáveis de estado que armazenam o(s) valor(es) inicial(ais).
+	- O que está dentro dos parenteses de `useState` é/são o(s) valor(es) inicial(ais).
+	- `useState` retorna um par de valores: o valor atual (`categorias` e `valores`) e uma função que muda este valor (`setCategorias` e `setValues`).
+- Usamos `useEffect` quando queremos que algo aconteça. **Primeiro parâmetro**: O que queremos que aconteça. **Segundo parâmetro (opcional)**: Quando queremos que aconteça (no caso, quando quais coisas atualizarem, faça o que está no primeiro parâmetro).
+
+# [Configurações padrões :wrench:](#índice)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
