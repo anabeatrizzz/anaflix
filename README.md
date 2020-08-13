@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="100%" src="https://i.ibb.co/Nm2xfZ1/img2.jpg" alt="Icon-Imersao-Alura"/>
+  <img width="50%" src="https://i.ibb.co/Nm2xfZ1/img2.jpg" alt="Icon-Imersao-Alura"/>
 </p>
 
 
