@@ -7,6 +7,10 @@
 * [O que aprendi? :thinking:](#o-que-aprendi-thinking)
 * [Configurações padrões :wrench:](#configurações-padrões-wrench)
 
+
+Este é meu primeiro projeto usando React e...
+
+
 # [O que aprendi? :thinking:](#índice)
 - *Hot reload* é quando a página atualiza sozinha quando editamos um arquivo e depois salvamos.
 - Tudo que está dentro dos parentes do `return` da função `App` não é HTML, mas sim JSX (JavaScript XML).
