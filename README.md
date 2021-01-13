@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="50%" src="https://i.ibb.co/Nm2xfZ1/img2.jpg" alt="Icon-Imersao-Alura"/>
+  <img width="50%" src="https://i.ibb.co/CBvJjbd/react-img.png" alt="Icon-Imersao-Alura"/>
 </p>
 
 
@@ -14,7 +14,7 @@ Este é meu primeiro projeto usando React e...
 # [O que aprendi? :thinking:](#índice)
 - *Hot reload* é quando a página atualiza sozinha quando editamos um arquivo e depois salvamos.
 - Tudo que está dentro dos parentes do `return` da função `App` não é HTML, mas sim JSX (JavaScript XML).
-- No JS a palavra class é reservada, então usa-se `ClassName` para referenciar classes do css.
+- No JS a palavra class é reservada, então usa-se `className` para referenciar classes do css.
 - Usa-se a lib `styled-components` para escrevermos css dentro de um arquivo js.
 - O conceito de Single Page Application envolve não ter requisições (sem refresh) quando ocorre uma transição entre páginas. Uma página unica que representa a aplicação como um todo.
 - Todo componente é uma função.
