@@ -1,11 +1,11 @@
 import { useState } from 'react';
 
 function useForm(valoresIniciais) {
-	const [valores, setValores] = useState(valoresIniciais);
+  const [valores, setValores] = useState(valoresIniciais);
 
-	function setValor(chave, valor) {
+  function setValor(chave, valor) {
     setValores({
-    	/* As reticencias aqui representam "tudo que ja estiver lá mais valores" */
+      /* As reticencias aqui representam "tudo que ja estiver lá mais valores" */
       ...valores,
       [chave]: valor,
     });
@@ -20,7 +20,7 @@ function useForm(valoresIniciais) {
   }
 
   function limparForm() {
-  	setValores(valoresIniciais);
+    setValores(valoresIniciais);
   }
 
   return { valores, handleChange, limparForm };
