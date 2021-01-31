@@ -1,5 +1,7 @@
+// --- Pacotes ---
 import React from 'react';
 
+// --- CSS ---
 import { VideoContainer, ResponsiveIframe } from './VideoIframeResponsive-css.js';
 
 function YouTubeIframeResponsive({ youtubeID }) {

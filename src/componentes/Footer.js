@@ -1,4 +1,7 @@
+// --- Pacotes ---
 import React from 'react';
+
+// --- CSS ---
 import { FooterBase } from './Footer-css.js';
 
 function Footer() {

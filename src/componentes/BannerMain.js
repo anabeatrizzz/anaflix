@@ -1,6 +1,11 @@
+// --- Pacotes ---
 import React from 'react';
+
+// --- Componentes ---
 import VideoIframeResponsive from './VideoIframeResponsive.js';
-import { BannerMainContainer, ContentAreaContainer, WatchButton } from './BannerMain-css.js';
+
+// --- CSS ---
+import {BannerMainContainer, ContentAreaContainer, WatchButton} from './BannerMain-css.js';
 
 function getYouTubeId(youtubeURL) {
   return youtubeURL.replace(
@@ -9,11 +14,7 @@ function getYouTubeId(youtubeURL) {
     );
 }
 
-export default function BannerMain({
-  videoTitle,
-  videoDescription,
-  url,
-}) {
+export default function BannerMain({ videoTitle, videoDescription, url }) {
   const youTubeID = getYouTubeId(url);
   const bgUrl = `https://img.youtube.com/vi/${youTubeID}/maxresdefault.jpg`;
 
