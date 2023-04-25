@@ -13,7 +13,7 @@
     "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
-    "styled-components": "^5.1.1"
+    "styled-components": "^5.3.10"
   },
   "scripts": {
     "server": "node ./server.js",
