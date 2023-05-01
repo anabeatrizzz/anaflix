@@ -39,6 +39,6 @@
     ]
   },
   "devDependencies": {
-    "concurrently": "^5.2.0"
+    "concurrently": "^8.0.1"
   }
 }
